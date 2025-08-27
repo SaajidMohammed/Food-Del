@@ -29,12 +29,7 @@ const port = process.env.PORT || 4000;
 // This allows the server to parse JSON data in request bodies
 app.use(express.json());
 // This enables Cross-Origin Resource Sharing, allowing your frontend to communicate with this backend
-app.use(cors({
-  origin: [
-    "https://food-del-frontend-5d43.onrender.com"
-    "https://food-del-admin-nf9o.onrender.com/"
-  ]// Replace with your actual Netlify domain
-}));
+app.use(cors());
 
 
 // --- Database Connection ---
